@@ -1,0 +1,160 @@
+html, body, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  margin-top: 70px;
+  width: 100%;
+}
+
+/* sção HERO */
+.hero {
+  background-color: #0b2f8a;
+  color: #ffffff;
+  padding: 80px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  max-width: 520px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero-image img {
+  max-width: 360px;
+  border: 1px solid #000;
+  border-radius: 40%;
+}
+
+.benefits {
+  background-color: #ffffff;
+  padding: 80px 100px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.benefit img {
+  width: 90px;
+  height: 90px;       
+  object-fit: contain; 
+}
+
+.benefit span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* seção planos */
+.plans {
+  background-color: #f6f6f6;
+  padding: 80px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plans-image {
+  position: relative;
+}
+
+.plans-image img {
+  max-width: 420px;
+}
+
+.price-bubble {
+  position: absolute;
+  background-color: #0066e6;
+  color: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  text-align: center;
+  width: 160px;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price-bubble.free {
+  top: -20px;
+  left: -60px;
+}
+
+.price-bubble.paid {
+  bottom: -20px;
+  right: -60px;
+}
+
+.plans-text {
+  max-width: 400px;
+}
+
+.plans-text h2 {
+  color: #0b2f8a;
+  margin-bottom: 20px;
+}
+
+.plans-text button {
+  background-color: #0066e6;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* seção empresas */
+.enterprise {
+  background-color: #0b2f8a;
+  color: #ffffff;
+
+  padding: 80px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enterprise-text {
+  max-width: 500px;
+}
+
+.enterprise-image img{
+  max-width: 360px;
+  border: 1px solid #000;
+  border-radius: 40%;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  background-color: #0066e6;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+}
