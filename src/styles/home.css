@@ -1,51 +1,52 @@
-html, body, #root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .home-container {
   margin-top: 70px;
   width: 100%;
 }
 
-/* sção HERO */
+/* Seção HERO */
 .hero {
   background-color: #0b2f8a;
   color: #ffffff;
-  padding: 80px 60px;
+  padding: 100px 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .hero-content {
-  max-width: 520px;
+  max-width: 550px;
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 25px;
 }
 
 .hero p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
+  opacity: 0.9;
 }
 
 .hero-image img {
-  max-width: 360px;
-  border: 1px solid #000;
-  border-radius: 40%;
+  max-width: 420px;
+}
+
+/* Seção Benefícios */
+.benefits-intro {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .benefits {
   background-color: #ffffff;
-  padding: 80px 100px;
-
+  padding: 40px 100px 80px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  gap: 80px;
   text-align: center;
 }
 
@@ -53,108 +54,94 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 15px;
 }
 
 .benefit img {
-  width: 90px;
-  height: 90px;       
-  object-fit: contain; 
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
-.benefit span {
-  font-size: 15px;
-  font-weight: 500;
-  color: #000;
-}
-
-/* seção planos */
+/* Seção PLANOS (Correção de Sobreposição) */
 .plans {
   background-color: #f6f6f6;
-  padding: 80px 60px;
-
+  padding: 100px 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
 }
 
-.plans-image {
+.plans-visual-container {
   position: relative;
+  width: 500px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.plans-image img {
-  max-width: 420px;
+.plans-main-image img {
+  max-width: 450px;
+  z-index: 1;
 }
 
 .price-bubble {
   position: absolute;
   background-color: #0066e6;
   color: #fff;
-  padding: 16px;
   border-radius: 50%;
-  text-align: center;
-  width: 160px;
-  height: 160px;
-
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(0, 102, 230, 0.2);
 }
 
-.price-bubble.free {
-  top: -20px;
-  left: -60px;
+.bubble-free {
+  width: 180px;
+  height: 180px;
+  top: -30px;
+  left: -40px;
 }
 
-.price-bubble.paid {
-  bottom: -20px;
-  right: -60px;
+.bubble-paid {
+  width: 200px;
+  height: 200px;
+  bottom: -40px;
+  right: -40px;
 }
+
+.price-bubble strong { font-size: 18px; margin-bottom: 5px; }
+.price-bubble .label { font-size: 14px; opacity: 0.9; }
+.price-bubble h2 { font-size: 38px; margin: 2px 0; }
+.price-bubble .period { font-size: 14px; }
 
 .plans-text {
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .plans-text h2 {
   color: #0b2f8a;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
-.plans-text button {
+.plans-text p {
+  color: #888;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.learn-more-btn {
   background-color: #0066e6;
   color: #fff;
   border: none;
-  padding: 12px 20px;
+  padding: 14px 30px;
   border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
-}
-
-/* seção empresas */
-.enterprise {
-  background-color: #0b2f8a;
-  color: #ffffff;
-
-  padding: 80px 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.enterprise-text {
-  max-width: 500px;
-}
-
-.enterprise-image img{
-  max-width: 360px;
-  border: 1px solid #000;
-  border-radius: 40%;
-}
-
-.contact-btn {
-  margin-top: 20px;
-  background-color: #0066e6;
-  color: #fff;
-  border: none;
-  padding: 12px 22px;
-  border-radius: 6px;
 }

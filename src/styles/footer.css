@@ -29,22 +29,21 @@
 
 .footer-socials {
   display: flex;
-  gap: 14px;
+  gap: 15px;
 }
 
 .footer-socials a {
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   border: 1px solid #000;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: #000;
   text-decoration: none;
-  transition: all 0.2s ease;
+  font-size: 18px;
+  transition: all 0.3s ease;
 }
 
 .footer-socials a:hover {
@@ -64,3 +63,7 @@
   font-size: 14px;
   color: #000;
 }
+
+
+
+
