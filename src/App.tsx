@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Planos from "./pages/Planos";
@@ -23,7 +22,6 @@ function App() {
 }
 
 export default App;
-=======
 import Home from "./pages/Home";
 
 function App() {
@@ -31,4 +29,3 @@ function App() {
 }
 
 export default App;
->>>>>>> e5a7bb1fd7dd0aab02e157889b8a5203ba89feb2
